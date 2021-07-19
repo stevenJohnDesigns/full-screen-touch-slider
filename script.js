@@ -46,7 +46,7 @@ let isDragging = false,
         isDragging = false
         cancelAnimationFrame(animationID)
 
-        const movedBy = currentTranslate - previousTranslate
+        const movedBy = currentTranslate - prevTranslate
 
         if(movedBy < -100 && currentIndex < slides.length -1)
         currentIndex += 1
